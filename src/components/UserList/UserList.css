@@ -1,0 +1,11 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.user-list-sentinel {
+  height: 1px;
+  width: 100%;
+}
+

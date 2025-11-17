@@ -1,0 +1,26 @@
+.layout {
+  min-height: 100vh;
+  background: #0D0E10;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.layout-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    padding: 1rem;
+  }
+  
+  .layout-container {
+    max-width: 100%;
+  }
+}
+
