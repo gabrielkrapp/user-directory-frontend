@@ -3,7 +3,7 @@
   background: #0D0E10;
   display: flex;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 3rem 32px;
 }
 
 .layout-container {
@@ -12,15 +12,5 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-@media (max-width: 640px) {
-  .layout {
-    padding: 1rem;
-  }
-  
-  .layout-container {
-    max-width: 100%;
-  }
 }
 
