@@ -35,8 +35,7 @@ export async function request<T>(
       try {
         const errorData = await response.json();
         errorMessage = errorData.message || errorMessage;
-      } catch {
-      }
+      } catch { /* empty */ }
 
       throw new HttpError(errorMessage, response.status, response.statusText);
     }

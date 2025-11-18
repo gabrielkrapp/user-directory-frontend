@@ -78,19 +78,27 @@
 
 .update-button {
   width: 100%;
-  padding: 16px 24px;
-  margin-top: 1.5rem;
-  background: linear-gradient(90deg, #A78BFA 0%, #06B6D4 50%, #10B981 100%);
-  color: #0F1419;
-  border: none;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(
+    45.01deg,
+    #DA74FC 0%,
+    #00D9A8 100%
+  );
   border-radius: 8px;
+  border: none;
   font-family: 'Inter', sans-serif;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
+  color: #0F1419;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 12px rgba(167, 139, 250, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out;
 }
 
 .update-button:hover {
@@ -100,4 +108,17 @@
 
 .update-button:active {
   transform: translateY(0);
+}
+
+.update-button-wrapper {
+  position: sticky;
+  bottom: 0;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  background: linear-gradient(
+    to top,
+    #0D0E10 85%,
+    rgba(13, 14, 16, 0) 100%
+  );
+  z-index: 10;
 }

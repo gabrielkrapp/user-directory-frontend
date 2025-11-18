@@ -15,7 +15,7 @@ interface UseInfiniteUsersReturn {
   reset: () => void;
 }
 
-const USERS_PER_PAGE = 6;
+const USERS_PER_PAGE = 3;
 
 export function useInfiniteUsers(): UseInfiniteUsersReturn {
   const [users, setUsers] = useState<User[]>([]);

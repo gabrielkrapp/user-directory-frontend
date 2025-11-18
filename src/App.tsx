@@ -65,11 +65,12 @@ function App() {
                 </button>
               </div>
             )}
-
             {users.length > 0 && (
-              <button className="update-button" onClick={reset}>
-                Update
-              </button>
+              <div className="update-button-wrapper">
+                <button className="update-button" onClick={reset}>
+                  Update
+                </button>
+              </div>
             )}
           </>
         )}
